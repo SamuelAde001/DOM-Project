@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c8d8e4;
+  font-family: "Roboto", sans-serif;
+  color: #787878;
+}
+body header {
+  background: #2b6777;
+  padding: 50px;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+body header h1 {
+  font-weight: 900;
+  font-size: 70px;
+}
+body header #totalpayout {
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 5px;
+  background: white;
+  color: #787878;
+  border: 3px solid #787878;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+body header #totalpayout .naira,
+body header #totalpayout .initialtotalprice {
+  color: #52ab98;
+}
+body header #cashoutbtn {
+  background: #52ab98;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 5px;
+  padding-inline: 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+body header #cashoutbtn:hover {
+  cursor: pointer;
+  background: #3a7d6f;
+  color: white;
+}
+body main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 30px;
+  padding: 50px;
+  place-content: center;
+}
+body main .items {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+body main .items img {
+  width: 160px;
+}
+body main .items .itemname {
+  font-size: 18px;
+  font-weight: 700;
+}
+body main .items .increase_decreasebtn {
+  background: #c8d8e4;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+body main .items .increase_decreasebtn span {
+  display: inline-block;
+  width: 33.333%;
+}
+body main .items .increase_decreasebtn .itemamount {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-weight: 600;
+}
+body main .items .increase_decreasebtn .decreasebtn:hover,
+body main .items .increase_decreasebtn .increasebtn:hover {
+  cursor: pointer;
+  background: #818c94;
+  color: white;
+}
+body main .items .likeDeleteBox {
+  width: 100%;
+}
+body main .items .likeDeleteBox span {
+  border: 1px solid #787878;
+  display: inline-block;
+  width: 50%;
+  padding: 3px;
+}
+body main .items .likeDeleteBox span:hover {
+  cursor: pointer;
+  background: #818c94;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styles.css.map */
