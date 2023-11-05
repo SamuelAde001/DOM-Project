@@ -24,9 +24,6 @@ body header h1 {
   font-size: 70px;
 }
 body header #totalpayout {
-  position: absolute;
-  bottom: 0;
-  right: 30%;
   width: -moz-max-content;
   width: max-content;
   text-align: center;
@@ -121,7 +118,7 @@ body main .items .likeDeleteBox span:hover {
   color: white;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   header {
     flex-direction: column;
   }

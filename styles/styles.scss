@@ -33,9 +33,9 @@ body {
       font-size: 70px;
     }
     #totalpayout {
-      position: absolute;
-      bottom: 0;
-      right: 30%;
+      // position: absolute;
+      // bottom: 0;
+      // right: 30%;
       width: max-content;
       text-align: center;
       font-size: 20px;
@@ -138,7 +138,7 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   header {
     flex-direction: column;
   }
